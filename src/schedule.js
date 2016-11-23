@@ -16,8 +16,8 @@ const instance = axios.create({ baseURL, timeout: 2000 });
  *
  * @returns {Promise} - Promise with available channels when resolved
  */
-function channels() {
-  return instance.get('/tv');
+function concerts() {
+  return instance.get('/concerts');
 }
 
 /**
@@ -28,21 +28,23 @@ function channels() {
  * @param {string} name - Name of the channel
  * @returns {Promise} - Promise with schedule for channel when resolved
  */
-function channel(name) {
-  return channels().then((result) => {
+function concert(name) {
+  return concerts().then((result) => {
     if (result.data && result.data.results.length > 0) {
-      const tmp = result.data.results[0].channels;
+      const tmp = result.data.results[0].concerts;
+      console.log(tmp);
       let endpoint;
-      tmp.map((channel) => {
-        if (channel.name === name) {
-          endpoint = channel.endpoint;
+      tmp.map((concert) => {
+        if (concert.name === name) {
+          endpoint = concert.results;
+          console.log(endpoint);
         } else {
           return [];
         }
         return [];
       });
       if (endpoint) {
-        return instance.get(endpoint);
+        return instance.get(results);
       }
     }
     return [];
@@ -50,6 +52,6 @@ function channel(name) {
 }
 
 module.exports = {
-  channels,
-  channel,
+  concerts,
+  concert,
 };
