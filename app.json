@@ -1,0 +1,7 @@
+{
+  "name": "verkefni6-daniel",
+  "description": "Verkefni 6 - vef - Herou",
+  "env": {
+    "BASEURL": "http://apis.is"
+  }
+}

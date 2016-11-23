@@ -1,0 +1,59 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1, p {
+  background-color: inherit;
+  color: white;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+h2 {
+  background-color: inherit;
+  color: purple;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+a {
+  background-color: inherit;
+  color: #00B7FF;
+  font-size: 1.2em;
+}
+
+div {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+div a {
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: inline-flex;
+}
+
+thead {
+  background-color: inherit;
+  color: #00B7FF;
+  font-size: 1.6em;
+  resize: vertical;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 5px;
+}
+
+tbody {
+  background-color: inherit;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+}

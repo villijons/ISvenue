@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Velkomin á besta vef í heimi.. á Íslandi.
+  div
+    for channel in channels
+      a(href='tv/'+channel.name) #{channel.name}
