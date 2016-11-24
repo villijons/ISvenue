@@ -3,26 +3,17 @@ extends layout
 block content
   h1= title
   p Tónleikaviðburðir á Íslandi
-  div
-    table
-      thead
-        tr
-          th Dagsetning
-          th Tími
-          th Viðburður
-          th Upplýsingar
-          th Staðsetning
-          th Mynd
-      tbody
-        for item in concerts
-          tr
-            td #{item.dateOfShow.substring(0,10)}
-            td #{item.dateOfShow.substring(11,16)}
-            td #{item.eventDateName}
-            td #{item.name}
-            td #{item.eventHallName}
-            td
-              img(src='https://d30qys758zh01z.cloudfront.net/images/medium/1.9823.jpg', alt='Events Picture', height='50', width='50')
+  div.container-fluid.bg-3.text-center
+    div.row
+      for item in concerts
+        div.col-sm-6 #{item.dateOfShow.substring(0,10)}
+        div.col-sm-6 #{item.eventDateName}
+        div.col-sm-6 #{item.name}
+        div.col-sm-6 #{item.dateOfShow.substring(11,16)}
+        div.col-sm-6
+          img(src=''+item.imageSource, alt='Events Picture')
+        div.col-sm-6 #{item.eventHallName}
+    p
+
 
   br
-  a(href='../../') Til baka
