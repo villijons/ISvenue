@@ -7,12 +7,22 @@ block content
     table
       thead
         tr
+          th Dagsetning
+          th Tími
           th Viðburður
+          th Upplýsingar
           th Staðsetning
+          th Mynd
       tbody
         for item in concerts
           tr
+            td #{item.dateOfShow.substring(0,10)}
+            td #{item.dateOfShow.substring(11,16)}
             td #{item.eventDateName}
+            td #{item.name}
             td #{item.eventHallName}
+            td
+              img(src='https://d30qys758zh01z.cloudfront.net/images/medium/1.9823.jpg', alt='Events Picture', height='50', width='50')
+
   br
   a(href='../../') Til baka
