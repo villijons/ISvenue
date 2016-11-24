@@ -3,17 +3,16 @@ extends layout
 block content
   h1= title
   p Tónleikaviðburðir á Íslandi
-  div.container-fluid.bg-3.text-center
-    div.row
+  section.All-the-recipes-section
+    div.Recipes
       for item in concerts
-        div.col-sm-6 #{item.dateOfShow.substring(0,10)}
-        div.col-sm-6 #{item.eventDateName}
-        div.col-sm-6 #{item.name}
-        div.col-sm-6 #{item.dateOfShow.substring(11,16)}
-        div.col-sm-6
-          img(src=''+item.imageSource, alt='Events Picture')
-        div.col-sm-6 #{item.eventHallName}
-    p
-
+        div.recipesLatest
+          div.recipesIMG
+            img(src=''+item.imageSource, alt='Events Picture')
+          div.container
+            p.date #{item.eventDateName}
+            div.resName-seeMore
+              p #{item.dateOfShow.substring(0,10)}
+              p #{item.dateOfShow.substring(11, 16)}
 
   br
