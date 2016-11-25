@@ -3,14 +3,18 @@ extends layout
 block content
   h1= title
   p Tónleikaviðburðir á Íslandi
-  div.Recipes
-    for item in concerts
-      div.recipesLatest
-        div.recipesIMG
-          img(src=''+item.imageSource, alt='Events Picture')
-        div.container
-          p.date #{item.eventDateName}
-          div.resName-seeMore
+  div.container
+    div.row
+      for item in concerts
+        div.col-sm-4
+          div.row
+            img(src=''+item.imageSource, alt='Events Picture')
+          div.row
+            p #{item.eventDateName}
+          div.row
             p #{item.dateOfShow.substring(0,10)} #{item.dateOfShow.substring(11, 16)}
+          div.row
+            p
+              a(href='http://maps.google.com/?q='+ item.eventHallName) Staðsetning
 
   br
