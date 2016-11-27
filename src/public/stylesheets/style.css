@@ -1,14 +1,38 @@
 body {
   margin: 0;
   padding: 0;
+  //background-image: url('dingo3x.jpg');
+  background-size: 100% 100%;
+  //background-position: 100% 100%;
+  //background-repeat: no-repeat;
+  background-color: #DCD0C0;
+
 }
 
+.lolhehe{
+
+}
+
+.lulbruh {
+  background-color: #253939;
+}
+
+.haus {
+    background-color: #F4F4F4;
+    text-align: center;
+    margin-bottom: 20%;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2% 2%;
+
+}
 section {
   margin-bottom: 5%;
 }
 
 header {
-  padding: 0 10%;
+  padding: 0% 0%;
   display: block;
   justify-content: space-between;
   position: absolute;
@@ -52,6 +76,12 @@ p {
   line-height: 32px;
 }
 
+a {
+  text-decoration: none;
+  text-decoration-color: #e3cdb1;
+
+}
+
 
 /*Media stuff*/
 
@@ -61,33 +91,15 @@ p {
   }
 }
 
-@media only screen and (max-width:640px) {
-  h1 {
-    font-size: 32px;
-  }
-  p {
-    font-size: 15px;
-    line-height: 12px;
-  }
-  .recipesname>p {
-    font-size: 50px;
-  }
-  .recipesSEE>p {
-    font-size: 100px;
-  }
-  .button {
-    font-size: 14px;
-  }
-  h3 {
-    font-size: 14px;
-  }
-  .date>p {
-    font-size: 12px;
-  }
-}
+
 
 
 /* Nav-bar */
+
+.eventName {
+
+
+}
 
 .Header-seaction {
   width: 100%;
@@ -172,10 +184,12 @@ p {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 2.5%;
+
 }
 
 .All-the-recipes-section {
-  padding: 0 10%;
+  padding: 20% 10%;
+  padding-bottom: 0%;
 }
 
 .recipesname {
@@ -200,10 +214,11 @@ p {
   width: 32%;
   min-width: 300px;
   margin-bottom: 2.5%;
+  background-color: #F4F4F4;
 }
 
 .container {
-  padding: 2px 16px;
+  padding: 20px 16px;
 }
 
 .recipesIMG {
@@ -217,10 +232,10 @@ p {
 }
 
 .recipesSEE {
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  height: 25px;
-  color: #e3cdb1;
+  //font-family: 'Poppins', sans-serif;
+  //font-size: 12px;
+  //height: 25px;
+  //color: #e3cdb1;
 }
 
 .recipesSEEmore {
@@ -407,15 +422,26 @@ p {
 
 /*Footer-inn*/
 
-.joinUs {
+.joinUs{
+  background-color: #F4F4F4;
   text-align: center;
-  margin-bottom: 4%;
+  margin-bottom: -6%;
   font-family: 'Poppins-Regular', sans-serif;
   font-weight: bold;
   font-size: 18px;
+  padding: 2% 2%;
+
 }
 
-.facebook, .youtube, .twitter {
+.facebook{
+  background: url('facebook.jpg');
+  margin-right: 1%;
+  cursor: pointer;
+
+
+}
+
+.twitter {
   margin-right: 1%;
   cursor: pointer;
 }

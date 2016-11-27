@@ -1,20 +1,30 @@
 extends layout
 
 block content
-  h1= title
-  p Tónleikaviðburðir á Íslandi
-  div.container
-    div.row
-      for item in concerts
-        div.col-sm-4
-          div.row
-            img(src=''+item.imageSource, alt='Events Picture')
-          div.row
-            p #{item.eventDateName}
-          div.row
-            p #{item.dateOfShow.substring(0,10)} #{item.dateOfShow.substring(11, 16)}
-          div.row
-            p
-              a(href='http://maps.google.com/?q='+ item.eventHallName) Staðsetning
 
-  br
+  head
+  body
+    header
+      section.Header-section
+        div.haus
+          h1= title
+          p Tónleikaviðburðir á Íslandi
+  main
+    section.All-the-recipes-section
+      div.Recipes
+        for item in concerts
+          div.recipesLatest
+            img.recipesIMG(src=''+item.imageSource, alt='Events Picture')
+            div.eventName
+              p.recipesname #{item.eventDateName}
+            div.resName-seeMore
+              p #{item.dateOfShow.substring(8,10)+'/'+item.dateOfShow.substring(5,7)+'/'+item.dateOfShow.substring(0,4)} #{item.dateOfShow.substring(11, 16)}
+              p.recipesSEE
+                a(href='http://maps.google.com/?q='+ item.eventHallName) Staðsetning
+
+  footer
+    section.joinUs
+      p Follow us on Facebook and Twitter for our latest news!
+      img.facebook(src='dingobook.jpg', alt='Facebook icon', height='42', width='42')
+      img.twitter(src='twitterdingo.jpg', alt='Twitter icon', height='42', width='42')
+      p.yamyam-text Isvenue.is

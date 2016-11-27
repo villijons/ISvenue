@@ -10,7 +10,7 @@ const router = express.Router();
 const schedule = require('./schedule');
 
 router.get('/', (req, res, next) => {
-  const title = 'Tónleikar';
+  const title = 'ISvenue.is';
 
   schedule.concerts()
   .then((result) => {
