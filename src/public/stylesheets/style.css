@@ -25,7 +25,6 @@ body {
     font-weight: bold;
     font-size: 18px;
     padding: 2% 2%;
-    width: 100%;
 
 }
 section {
@@ -45,6 +44,7 @@ header {
   right: 0;
   height: 15vh;
   align-items: center;
+  width: 100%;
 }
 
 
@@ -434,6 +434,9 @@ a {
 
 /*Footer-inn*/
 
+footer {
+  width: 100%;
+}
 .joinUs{
   background-color: #F4F4F4;
   text-align: center;
@@ -442,6 +445,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   padding: 2% 2%;
+  wid
 
 }
 
