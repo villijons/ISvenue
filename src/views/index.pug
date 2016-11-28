@@ -3,6 +3,7 @@ extends layout
 block content
 
   head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
   body
     header
       section.Header-section
@@ -25,6 +26,7 @@ block content
   footer
     section.joinUs
       p Follow us on Facebook and Twitter for our latest news!
-      img.facebook(src='dingobook.jpg', alt='Facebook icon', height='42', width='42')
+      div.facebook
+        img.facebook(src='dingobook.jpg', alt='Facebook icon', height='42', width='42')
       img.twitter(src='twitterdingo.jpg', alt='Twitter icon', height='42', width='42')
       p.yamyam-text Isvenue.is
