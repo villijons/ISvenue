@@ -29,13 +29,16 @@ body {
 }
 section {
   margin-bottom: 5%;
+
 }
 
 header {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0% 0%;
   display: block;
   justify-content: space-between;
-  position: absolute;
+  //position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -70,15 +73,15 @@ h3 {
 }
 
 p {
-  font-family: 'Poppins-light', sans-serif;
-  font-size: 18px;
-  color: #5e5b69;
-  line-height: 32px;
+  //font-family: 'Poppins-light', sans-serif;
+  //font-size: 18px;
+  //color: #5e5b69;
+  //line-height: 32px;
 }
 
 a {
   text-decoration: none;
-  text-decoration-color: #e3cdb1;
+  color: #B4AFAF;
 
 }
 
@@ -188,15 +191,17 @@ a {
 }
 
 .All-the-recipes-section {
-  padding: 20% 10%;
+  padding: 10% 10%;
   padding-bottom: 0%;
+  margin-top: 5%;
 }
 
 .recipesname {
   width: 400px;
   height: 15px;
-  font-family: 'PlayfaiDisplay', sans-serif;
-  font-size: 22px;
+  //font-family: 'PlayfaiDisplay', sans-serif;
+  margin-left: 2%;
+  font-size: 17px;
   font-weight: bold;
   color: #000000;
 }
@@ -211,8 +216,8 @@ a {
 
 .recipesLatest {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 32%;
-  min-width: 300px;
+  width: 24%;
+  min-width: 290px;
   margin-bottom: 2.5%;
   background-color: #F4F4F4;
 }
@@ -226,9 +231,13 @@ a {
 }
 
 .resName-seeMore {
+  font-family: 'Poppins-light', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: right;
+  margin-left: 2%;
+  font-size: 14px;
+  //color: #B4AFAF
 }
 
 .recipesSEE {
@@ -236,6 +245,8 @@ a {
   //font-size: 12px;
   //height: 25px;
   //color: #e3cdb1;
+  margin-right: 2%
+
 }
 
 .recipesSEEmore {
