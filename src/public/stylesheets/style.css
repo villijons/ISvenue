@@ -44,7 +44,7 @@ header {
   right: 0;
   height: 15vh;
   align-items: center;
-  width: 100%;
+  //width: 100%;
 }
 
 
@@ -435,7 +435,7 @@ a {
 /*Footer-inn*/
 
 footer {
-  width: 100%;
+  //width: 100%;
 }
 .joinUs{
   background-color: #F4F4F4;
@@ -449,15 +449,9 @@ footer {
 
 }
 
-.facebook{
-  background: url('facebook.jpg');
-  margin-right: 1%;
-  cursor: pointer;
 
 
-}
-
-.twitter {
+.twitter, .facebook {
   margin-right: 1%;
   cursor: pointer;
 }
