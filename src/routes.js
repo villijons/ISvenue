@@ -14,7 +14,6 @@ router.get('/', (req, res, next) => {
 
   schedule.concerts()
   .then((result) => {
-    console.log(result.data);
     if (result.data && result.data.results.length > 0) {
       res.render('index', { concerts: result.data.results, title });
     } else {
@@ -22,7 +21,7 @@ router.get('/', (req, res, next) => {
     }
   })
   .catch((err) => {
-    res.render('error', { message: 'fuck villa!', status: 'shit önnur villa' });
+    res.render('error', { message: 'Villa hefur komið upp.', status: '404' });
   });
 });
 

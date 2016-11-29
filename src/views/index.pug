@@ -11,23 +11,23 @@ block content
           h1= title
           p Music venues in Iceland
   main
-    section.All-the-recipes-section
-      div.Recipes
+    section.main-section
+      div.flexingItems
         for item in concerts
-          div.recipesLatest
-            img.recipesIMG(src=''+item.imageSource, alt='Events Picture')
+          div.Concerts
+            img.concertIMG(src=''+item.imageSource, alt='Events Picture')
             div.eventName
-              p.recipesname #{item.eventDateName}
-            div.resName-seeMore
+              p.concertname #{item.eventDateName}
+            div.dateandtime
               p #{item.dateOfShow.substring(8,10)+'/'+item.dateOfShow.substring(5,7)+'/'+item.dateOfShow.substring(0,4)} #{item.dateOfShow.substring(11, 16)}
-              p.recipesSEE
+              p.locationAPI
                 a(href='http://maps.google.com/?q='+ item.eventHallName) Location
 
   footer
-    section.joinUs
+    section.Footer-section
       p Follow us on Facebook and Twitter for our latest news!
       a(href='https://www.facebook.com/ISvenue/')
         img.facebook(src='https://www.dlapiper.com/en/us/locations/auckland/~/media/35740AA3584B4E43AB84254C17B18982.ashx?h=256&w=256', alt='facebook icon', height='42', width='42')
       a(href='https://twitter.com/IS_venue')
         img.twitter(src='http://www.nanotech.cuvalles.udg.mx/sites/default/files/twitter_circle_color-256.png', alt='Twitter icon', height='42', width='42')
-      p.yamyam-text ISvenue.is
+      p.ISvenuetext ISvenue.is

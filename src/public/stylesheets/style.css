@@ -1,20 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  //background-image: url('dingo3x.jpg');
   background-size: 100% 100%;
-  //background-position: 100% 100%;
-  //background-repeat: no-repeat;
   background-color: #DCD0C0;
 
-}
-
-.lolhehe{
-
-}
-
-.lulbruh {
-  background-color: #253939;
 }
 
 .haus {
@@ -27,26 +16,21 @@ body {
     padding: 2% 2%;
 
 }
+
 section {
   margin-bottom: 5%;
-
 }
 
 header {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0% 0%;
   display: block;
+  flex-wrap: wrap;
   justify-content: space-between;
-  //position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 15vh;
   align-items: center;
-  //width: 100%;
 }
-
 
 /*Stærðir á textum og fyrirsögnum*/
 
@@ -59,12 +43,11 @@ h1 {
 }
 
 h2 {
-  font-family: 'PlayfairDisplay': cursive;
+  font-family: 'PlayfairDisplay', cursive;
   font-size: 40px;
   font-weight: bold;
   font-style: normal;
   color: #000000;
-  color: var(--black);
 }
 
 h3 {
@@ -73,116 +56,14 @@ h3 {
   color: #e3cdb1;
 }
 
-p {
-  //font-family: 'Poppins-light', sans-serif;
-  //font-size: 18px;
-  //color: #5e5b69;
-  //line-height: 32px;
-}
-
 a {
   text-decoration: none;
   color: #B4AFAF;
-
 }
 
+/*main*/
 
-/*Media stuff*/
-
-@media (max-width:500px) {
-  .pumpkinpie-text, .magazin-text {
-    display: none;
-  }
-}
-
-
-
-
-/* Nav-bar */
-
-.eventName {
-
-
-}
-
-.Header-seaction {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 27.5px;
-  flex-wrap: wrap;
-}
-
-.Recipes-Videos-AboutUs {
-  display: flex;
-  flex-direction: row;
-  //justify-content: flex-end;
-  flex-wrap: wrap;
-  height: 30%;
-  width: 30%;
-  position: relative;
-  top: 7%;
-  left: -30%;
-  min-width: 160%;
-}
-
-.YumYumIMG {}
-
-.Recipes-Videos-AboutUs>li {
-  margin-left: 1em;
-  list-style-type: none;
-}
-
-.Recipes-Videos-AboutUs>li>a {
-  text-decoration: none;
-  font-family: 'poppins-Regular', sans-serif;
-  font-size: 15px;
-  color: #9b9b9b;
-}
-
-
-/*Svæðið með köku bakgrunninum*/
-
-.Header-text {
-  width: 40vw;
-  padding: 0 10%
-}
-
-.pumpkinpie-text {
-  max-width: 60%;
-}
-
-.Background-header-pie {
-  background: url('assets/background-header-image@3x.png');
-  background-size: cover;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  min-height: 70vh;
-  left: 0;
-  padding-top: 15vh;
-  box-sizing: border-box;
-}
-
-.button {
-  background-color: transparent;
-  cursor: pointer;
-  color: #e3cdb1;
-  font-family: 'poppins-Medium', sans-serif;
-  font-size: 16px;
-  border: 1px solid #e3cdb1;
-  width: 250px;
-  height: 52px;
-}
-
-.button:hover {
-  color: #fff;
-  background-color: #e3cdb1;
-}
-
-
-/*Svæðið með uppskriftunum*/
-
-.Recipes {
+.flexingItems {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -191,31 +72,21 @@ a {
 
 }
 
-.All-the-recipes-section {
+.main-section {
   padding: 10% 10%;
   padding-bottom: 0%;
-  //margin-top: 5%;
 }
 
-.recipesname {
+.concertname {
   width: 400px;
   height: 15px;
-  //font-family: 'PlayfaiDisplay', sans-serif;
   margin-left: 2%;
   font-size: 17px;
   font-weight: bold;
   color: #000000;
 }
 
-.date {
-  width: 90px;
-  height: 11.5px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  color: #9b9b9b;
-}
-
-.recipesLatest {
+.Concerts {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 24%;
   min-width: 290px;
@@ -223,221 +94,26 @@ a {
   background-color: #F4F4F4;
 }
 
-.container {
-  padding: 20px 16px;
-}
-
-.recipesIMG {
+.concertIMG {
   width: 100%;
 }
 
-.resName-seeMore {
+.dateandtime {
   font-family: 'Poppins-light', sans-serif;
   display: flex;
   justify-content: space-between;
-  align-items: right;
   margin-left: 2%;
   font-size: 14px;
-  //color: #B4AFAF
 }
 
-.recipesSEE {
-  //font-family: 'Poppins', sans-serif;
-  //font-size: 12px;
-  //height: 25px;
-  //color: #e3cdb1;
-  margin-right: 2%
-
-}
-
-.recipesSEEmore {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.RecipesVID-section {
-  margin-top: 10%;
-  padding: 0 10%
-}
-
-.GreySpan {
-  color: #d0d0d0;
-}
-
-.recipesVID {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.recipesIMGvid {
-  width: 100%;
-}
-
-.WrapperinoIMG {
-  position: relative;
-}
-
-.WrapperinoIMG::after {
-  opacity: 0;
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: url('assets/play-icon@2x.png');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.WrapperinoIMG::before {
-  opacity: 0;
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(227, 205, 177, 0.7);
-}
-
-.WrapperinoIMG:hover::before, .WrapperinoIMG:hover::after {
-  opacity: 1;
-}
-
-.recipesLatestVID {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 32%;
-  min-width: 300px;
-  margin-bottom: 5%;
-}
-
-.recipesSEE {
+.locationAPI {
+  margin-right: 2%;
   cursor: pointer;
 }
-
-.seeingLine {
-  width: 30;
-  height: 1px;
-  background-color: #e7e7e7;
-}
-
-
-/*Magazin svæðið*/
-
-.Magazin-seaction>h3 {
-  margin-top: 15%;
-}
-
-.magazin {
-  margin-top: 7%;
-  width: 40vw;
-  margin-bottom: -48%;
-  padding-bottom: 20%;
-}
-
-.magazinIMG {
-  position: relative;
-  top: -340px;
-  right: -90%;
-  min-width: 300px;
-  max-width: 70%;
-}
-
-.Magazin-seaction {
-  display: flex;
-  justify-content: space-between;
-  clear: both;
-  flex-wrap: wrap;
-  background-size: 70%;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-color: #f7f1eb;
-  min-height: 55vh;
-  padding: 2px 16px;
-  padding-left: 10%;
-  padding-top: 1.5em;
-}
-
-.magazin-text {
-  max-width: 60%;
-}
-
-
-/*Subscribe-svæðið*/
-
-.subscribeSection {
-  background-color: #000000;
-}
-
-.subzero {
-  padding: 5% 10%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.subuno {
-  display: flex;
-  flex-direction: column;
-}
-
-.email {
-  font-family: 'PlayfairDisplay-Bold', sans-serif;
-  color: #fafafa;
-  ;
-  background-color: #000000;
-  padding-bottom: 5%;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  font-size: 22px;
-  margin-top: -5%
-}
-
-.subdos {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.subHead {
-  font-family: PlayfairDisplay;
-  font-size: 40px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  color: #fafafa;
-  margin-top: -2%;
-}
-
-.subscribe_email {
-  font-family: Poppins-Medium, sans-serif;
-  font-size: 14px;
-  color: #fafafa;
-}
-
-.submit {
-  background-color: transparent;
-  color: #e3cdb1;
-  font-family: poppins-Medium, sans-serif;
-  font-size: 16px;
-  border: 1px solid #e3cdb1;
-  width: 250px;
-  height: 52px;
-  cursor: pointer;
-}
-
 
 /*Footer-inn*/
 
-footer {
-  //width: 100%;
-}
-.joinUs{
+.Footer-section {
   background-color: #F4F4F4;
   text-align: center;
   margin-bottom: -6%;
@@ -445,22 +121,18 @@ footer {
   font-weight: bold;
   font-size: 18px;
   padding: 2% 2%;
-  wid
-
 }
-
-
 
 .twitter, .facebook {
   margin-right: 1%;
   cursor: pointer;
 }
 
-.yamyam-text {
+.ISvenuetext {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   color: #9b9b9b;
-  Letter spacing: -0.1px;
+  letter-spacing: -0.1px;
   cursor: pointer;
 }
